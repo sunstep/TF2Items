@@ -40,6 +40,7 @@
 #define PRESERVE_ATTRIBUTES		(1 << 5)
 #define FORCE_GENERATION		(1 << 6)
 
+
 class CBasePlayer;
 class CEconItem;
 class ITexture;
@@ -159,9 +160,9 @@ public:
 
 #pragma pack(pop)
 
-static_assert(sizeof(CEconItemView) == 148, "CEconItemView - incorrect size on this compiler");
-static_assert(sizeof(CEconItemHandle) == 24, "CEconItemHandle - incorrect size on this compiler");
-static_assert(sizeof(CAttributeList) == 28, "CAttributeList - incorrect size on this compiler");
+static_assert(sizeof(CEconItemView) == 200, "CEconItemView - incorrect size on this compiler");
+static_assert(sizeof(CEconItemHandle) == 32, "CEconItemHandle - incorrect size on this compiler");
+static_assert(sizeof(CAttributeList) == 48, "CAttributeList - incorrect size on this compiler");
 
 // enable to debug memory layout issues
 #if 0
